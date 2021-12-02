@@ -1,7 +1,7 @@
-package com.example.application.views;
+package com.sugarFree.application.views;
 
-import com.example.application.views.about.AboutView;
-import com.example.application.views.helloworld.HelloWorldView;
+import com.sugarFree.application.views.about.AboutView;
+import com.sugarFree.application.views.helloworld.HelloWorldView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -107,9 +107,10 @@ public class MainLayout extends AppLayout {
 
     private List<RouterLink> createLinks() {
         MenuItemInfo[] menuItems = new MenuItemInfo[]{ //
+                new MenuItemInfo("About", "la la-file", AboutView.class), //
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class), //
 
-                new MenuItemInfo("About", "la la-file", AboutView.class), //
+
 
         };
         List<RouterLink> links = new ArrayList<>();
